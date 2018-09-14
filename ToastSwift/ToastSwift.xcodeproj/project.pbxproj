@@ -12,6 +12,14 @@
 		FE1DCFB9214B657B00A52843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1DCFB7214B657B00A52843 /* Main.storyboard */; };
 		FE1DCFBB214B658700A52843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE1DCFBA214B658700A52843 /* Assets.xcassets */; };
 		FE1DCFBE214B658700A52843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1DCFBC214B658700A52843 /* LaunchScreen.storyboard */; };
+		FE1DCFCF214B7B1100A52843 /* WTFToast.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FE1DCFC7214B7B1100A52843 /* WTFToast.bundle */; };
+		FE1DCFD0214B7B1100A52843 /* WTFImageToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1DCFC8214B7B1100A52843 /* WTFImageToastView.swift */; };
+		FE1DCFD1214B7B1100A52843 /* WTFScreenTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1DCFC9214B7B1100A52843 /* WTFScreenTool.swift */; };
+		FE1DCFD2214B7B1100A52843 /* WTFSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1DCFCA214B7B1100A52843 /* WTFSourceManager.swift */; };
+		FE1DCFD3214B7B1100A52843 /* WTFTextToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1DCFCB214B7B1100A52843 /* WTFTextToast.swift */; };
+		FE1DCFD4214B7B1100A52843 /* WTFToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1DCFCC214B7B1100A52843 /* WTFToast.swift */; };
+		FE1DCFD5214B7B1100A52843 /* WTFToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1DCFCD214B7B1100A52843 /* WTFToastManager.swift */; };
+		FE1DCFD6214B7B1100A52843 /* WTFToastUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1DCFCE214B7B1100A52843 /* WTFToastUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		FE1DCFBA214B658700A52843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE1DCFBD214B658700A52843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE1DCFBF214B658700A52843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE1DCFC7214B7B1100A52843 /* WTFToast.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WTFToast.bundle; sourceTree = "<group>"; };
+		FE1DCFC8214B7B1100A52843 /* WTFImageToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTFImageToastView.swift; sourceTree = "<group>"; };
+		FE1DCFC9214B7B1100A52843 /* WTFScreenTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTFScreenTool.swift; sourceTree = "<group>"; };
+		FE1DCFCA214B7B1100A52843 /* WTFSourceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTFSourceManager.swift; sourceTree = "<group>"; };
+		FE1DCFCB214B7B1100A52843 /* WTFTextToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTFTextToast.swift; sourceTree = "<group>"; };
+		FE1DCFCC214B7B1100A52843 /* WTFToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTFToast.swift; sourceTree = "<group>"; };
+		FE1DCFCD214B7B1100A52843 /* WTFToastManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTFToastManager.swift; sourceTree = "<group>"; };
+		FE1DCFCE214B7B1100A52843 /* WTFToastUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTFToastUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 		FE1DCFB2214B657B00A52843 /* ToastSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FE1DCFC5214B7B1100A52843 /* WTFToastSwift */,
 				FE1DCFB3214B657B00A52843 /* AppDelegate.swift */,
 				FE1DCFB5214B657B00A52843 /* ViewController.swift */,
 				FE1DCFB7214B657B00A52843 /* Main.storyboard */,
@@ -62,6 +79,29 @@
 				FE1DCFBF214B658700A52843 /* Info.plist */,
 			);
 			path = ToastSwift;
+			sourceTree = "<group>";
+		};
+		FE1DCFC5214B7B1100A52843 /* WTFToastSwift */ = {
+			isa = PBXGroup;
+			children = (
+				FE1DCFC6214B7B1100A52843 /* sources */,
+				FE1DCFC8214B7B1100A52843 /* WTFImageToastView.swift */,
+				FE1DCFC9214B7B1100A52843 /* WTFScreenTool.swift */,
+				FE1DCFCA214B7B1100A52843 /* WTFSourceManager.swift */,
+				FE1DCFCB214B7B1100A52843 /* WTFTextToast.swift */,
+				FE1DCFCC214B7B1100A52843 /* WTFToast.swift */,
+				FE1DCFCD214B7B1100A52843 /* WTFToastManager.swift */,
+				FE1DCFCE214B7B1100A52843 /* WTFToastUtil.swift */,
+			);
+			path = WTFToastSwift;
+			sourceTree = "<group>";
+		};
+		FE1DCFC6214B7B1100A52843 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				FE1DCFC7214B7B1100A52843 /* WTFToast.bundle */,
+			);
+			path = sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +165,7 @@
 				FE1DCFBE214B658700A52843 /* LaunchScreen.storyboard in Resources */,
 				FE1DCFBB214B658700A52843 /* Assets.xcassets in Resources */,
 				FE1DCFB9214B657B00A52843 /* Main.storyboard in Resources */,
+				FE1DCFCF214B7B1100A52843 /* WTFToast.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +177,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE1DCFB6214B657B00A52843 /* ViewController.swift in Sources */,
+				FE1DCFD1214B7B1100A52843 /* WTFScreenTool.swift in Sources */,
+				FE1DCFD3214B7B1100A52843 /* WTFTextToast.swift in Sources */,
+				FE1DCFD2214B7B1100A52843 /* WTFSourceManager.swift in Sources */,
+				FE1DCFD6214B7B1100A52843 /* WTFToastUtil.swift in Sources */,
+				FE1DCFD0214B7B1100A52843 /* WTFImageToastView.swift in Sources */,
 				FE1DCFB4214B657B00A52843 /* AppDelegate.swift in Sources */,
+				FE1DCFD4214B7B1100A52843 /* WTFToast.swift in Sources */,
+				FE1DCFD5214B7B1100A52843 /* WTFToastManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ToastSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.coolead.CooleadPowerSwift.ToastSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,6 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ToastSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.coolead.CooleadPowerSwift.ToastSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
